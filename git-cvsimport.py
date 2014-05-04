@@ -513,7 +513,7 @@ git cvsimport [-A <author-conv-file>] [-C <git_repository>] [-b] [-d <CVSROOT>]
             timestamp = time
 
     with open(timestamp_file, "w") as f:
-        f.write("%d\n" % timestamp)
+        f.write("%s\n" % timestamp)
 
     if underscore_to_dot or slashsubst:
         tagnames = capture_or_die(["git", "for-each-ref",
